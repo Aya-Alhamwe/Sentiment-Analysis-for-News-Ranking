@@ -1,0 +1,30 @@
+# Python specific
+*.pyc
+*.pyo
+__pycache__/
+venv/
+.env/
+.venv/
+
+# IDE settings
+.idea/
+.vscode/
+
+# macOS specific
+.DS_Store
+
+# Logs
+*.log
+
+# Build directories
+build/
+dist/
+*.egg-info/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker related
+.docker/
