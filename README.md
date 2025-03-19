@@ -58,8 +58,6 @@ The model uses the following architecture:
 - **Attention Layer**: This layer helps the model focus on important words, enhancing the understanding of sentiment and improving the classification accuracy.
 - **Dense Layers**: These layers are used for the final classification of sentiments into **positive**, **negative**, or **neutral**.
 
-Additionally, the model has been trained using **RGU (Recurrent Generative Units)** to enhance its performance by allowing for better sequence generation and capturing complex patterns in the data.
-
 ### 🔹 Sentiment Classification  
 - **Positive** 💚 – News that indicates a positive impact on stock prices  
 - **Negative** 🔴 – News that suggests a negative impact on stock prices  
