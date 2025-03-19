@@ -1,4 +1,3 @@
-```markdown
 # 📊 Sentiment Analysis & Ranking for Financial News  
 
 ## 🚀 Overview  
