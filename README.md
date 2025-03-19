@@ -13,7 +13,8 @@ This project aims to analyze **financial news related to stocks** to assist inve
 ---
 
 ## 🛠️ Tech Stack  
-- **FastAPI** – for building the REST API  
+- **FastAPI** – for building the REST API
+- - **Git LFS** – for handling large files like datasets and models  
 - **TensorFlow/Keras** – for training the sentiment analysis model  
 - **Docker** – for containerizing the application  
 - **MLOps** – for automating model deployment and versioning  
