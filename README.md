@@ -3,6 +3,25 @@
 ## 🚀 Overview  
 This project aims to analyze **financial news related to stocks** to assist investors in **improving decision-making**. The system does not only classify news into **positive, negative, or neutral**, but it also includes a **Ranking System** that evaluates the impact of each news article on the market, allowing for the identification of **the best investment opportunities available at the moment**.  
 
+🧠 Model Details
+The sentiment analysis model is built using TensorFlow/Keras and trained on financial news data. The ranking system evaluates each news item based on its potential market impact.
+
+🔹 Sentiment Classification
+The model uses the following architecture:
+
+Preprocessing: Tokenizing the text and converting it into padded sequences to ensure uniform input size.
+Word2Vec Embeddings: Pretrained embeddings are used for better representation of words in the corpus, capturing semantic meanings.
+Bidirectional GRU Layers: The Bidirectional GRU layers process the sequences in both forward and backward directions, capturing dependencies in the text for more accurate sentiment analysis.
+Attention Layer: This layer helps the model focus on important words, enhancing the understanding of sentiment and improving the classification accuracy.
+Dense Layers: These layers are used for the final classification of sentiments into positive, negative, or neutral.
+Additionally, the model has been trained using RGU (Recurrent Generative Units) to enhance its performance by allowing for better sequence generation and capturing complex patterns in the data.
+
+🔹 News Ranking System
+The ranking model assigns an importance score to each news article based on:
+
+Market reactions to similar news in the past
+The credibility of the news source
+Keywords and sentiment intensity
 ## 🔥 Key Features  
 ✅ **Financial news classification** into positive, negative, or neutral 📌  
 ✅ **Ranking System** to determine the impact of news on the stock market 📈  
