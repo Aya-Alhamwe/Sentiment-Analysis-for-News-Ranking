@@ -1,5 +1,3 @@
-Here's the complete **README.md** file in English with all the required details:  
-
 ```markdown
 # 📊 Sentiment Analysis & Ranking for Financial News  
 
