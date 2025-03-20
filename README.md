@@ -92,6 +92,20 @@ The API will be available at **http://localhost:8000**.
 
 ---
 
+🌐 Deployment on Docker Hub
+
+I have deployed the model on Docker Hub for easy access and distribution. You can pull the Docker image from the following link:
+
+Docker Hub Repository: ayaalhamwe/my_news_model
+To pull and run the Docker container, use:
+
+bash
+Copy
+Edit
+docker pull ayaalhamwe/my_news_model:latest
+docker run -p 8000:8000 ayaalhamwe/my_news_model:latest
+The API will be available at http://localhost:8000.
+
 ## 📡 API Endpoints  
 
 ### 🔹 Predict Sentiment  
