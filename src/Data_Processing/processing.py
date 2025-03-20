@@ -36,21 +36,25 @@ def process_dates(news_df):
     news_df['year'] = news_df['date'].dt.year
     return news_df[['date', 'month', 'year']]
 
+if __name__ == "__main__":
+    # Read the data from the CSV file
+    csv_path = "/kaggle/input/news-sentiment-analysis/news.csv"
+    news_df = pd.read_csv(csv_path)
 
-# Convert sentiment to binary labels efficiently
-news_df['sentiment_label'] = (news_df['sentiment'] == 'POSITIVE').astype(int)
+    # Convert sentiment to binary labels efficiently
+    news_df['sentiment_label'] = (news_df['sentiment'] == 'POSITIVE').astype(int)
 
-# Clean text by removing unwanted characters and stopwords
-news_df['cleaned_text'] = news_df['news'].apply(clean_text_with_stopwords)
+    # Clean text by removing unwanted characters and stopwords
+    news_df['cleaned_text'] = news_df['news'].apply(clean_text_with_stopwords)
 
-# Perform word frequency analysis after cleaning the text
-most_common_words = perform_word_frequency_analysis(news_df)
-print("Most common words after processing: ", most_common_words)
+    # Perform word frequency analysis after cleaning the text
+    most_common_words = perform_word_frequency_analysis(news_df)
+    print("Most common words after processing: ", most_common_words)
 
-# Convert cleaned text into numerical features using TF-IDF
-X_shape = vectorize_text_data(news_df)
-print("Shape of the transformed matrix: ", X_shape)
+    # Convert cleaned text into numerical features using TF-IDF
+    X_shape = vectorize_text_data(news_df)
+    print("Shape of the transformed matrix: ", X_shape)
 
-# Process dates to extract month and year
-time_features = process_dates(news_df)
-print("After processing dates: \n", time_features.head())
+    # Process dates to extract month and year
+    time_features = process_dates(news_df)
+    print("After processing dates: \n", time_features.head())
