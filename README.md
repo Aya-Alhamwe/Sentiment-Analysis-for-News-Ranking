@@ -3,7 +3,7 @@
 ## 🚀 Overview  
 This project aims to analyze **financial news related to stocks** to assist investors in **improving decision-making**. The system does not only classify news into **positive, negative, or neutral**, but it also includes a **Ranking System** that evaluates the impact of each news article on the market, allowing for the identification of **the best investment opportunities available at the moment**.  
 
-🌐 ## Deployment on Docker Hub 
+## 🌐 Deployment on Docker Hub 
 
 I have deployed the model on **Docker Hub** for easy access and distribution. You can pull the Docker image from the following link:
 
