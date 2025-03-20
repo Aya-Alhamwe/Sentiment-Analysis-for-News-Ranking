@@ -3,6 +3,19 @@
 ## 🚀 Overview  
 This project aims to analyze **financial news related to stocks** to assist investors in **improving decision-making**. The system does not only classify news into **positive, negative, or neutral**, but it also includes a **Ranking System** that evaluates the impact of each news article on the market, allowing for the identification of **the best investment opportunities available at the moment**.  
 
+🌐 ## Deployment on Docker Hub 
+
+I have deployed the model on **Docker Hub** for easy access and distribution. You can pull the Docker image from the following link:
+
+- **Docker Hub Repository**: [ayaalhamwe/my_news_model](https://hub.docker.com/r/ayaalhamwe/my_news_model)
+
+To pull and run the Docker container, use:
+
+```bash
+docker pull ayaalhamwe/my_news_model:latest
+docker run -p 8000:8000 ayaalhamwe/my_news_model:latest
+
+```
 
 ## 🔥 Key Features  
 ✅ **Financial news classification** into positive, negative, or neutral 📌  
@@ -92,19 +105,6 @@ The API will be available at **http://localhost:8000**.
 
 ---
 
-🌐 **Deployment on Docker Hub**
-
-I have deployed the model on **Docker Hub** for easy access and distribution. You can pull the Docker image from the following link:
-
-- **Docker Hub Repository**: [ayaalhamwe/my_news_model](https://hub.docker.com/r/ayaalhamwe/my_news_model)
-
-To pull and run the Docker container, use:
-
-```bash
-docker pull ayaalhamwe/my_news_model:latest
-docker run -p 8000:8000 ayaalhamwe/my_news_model:latest
-
-```
 
 ## 📡 API Endpoints  
 
